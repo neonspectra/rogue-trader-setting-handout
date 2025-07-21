@@ -36,11 +36,27 @@
 
     % Left and right text
     \node[anchor=west] at ([xshift=1.2cm, yshift=-2.2cm]current page.north west) {\flufffont\Large XLMDCCCXXXI};
-    \node[anchor=east] at ([xshift=-1.2cm, yshift=-2.2cm]current page.north east) {\flufffont\Large Page \pageref};
+    \node[anchor=east] at ([xshift=-1.2cm, yshift=-2.2cm]current page.north east) {\flufffont\Large XLMDCCCXXXI};
 
     % Double divider line
-    \draw[line width=1.4pt] ([xshift=1.2cm, yshift=-2.6cm]current page.north west) -- ([xshift=-1.2cm, yshift=-2.6cm]current page.north east);
-    \draw[line width=0.6pt] ([xshift=1.2cm, yshift=-2.85cm]current page.north west) -- ([xshift=-1.2cm, yshift=-2.85cm]current page.north east);
+    %\draw[line width=1.4pt] ([xshift=1.2cm, yshift=-2.6cm]current page.north west) -- ([xshift=-1.2cm, yshift=-2.6cm]current page.north east);
+    %\draw[line width=0.6pt] ([xshift=1.2cm, yshift=-2.85cm]current page.north west) -- ([xshift=-1.2cm, yshift=-2.85cm]current page.north east);
+    % Left divider line
+    \draw[line width=1.4pt] ([xshift=1.2cm, yshift=-2.6cm]current page.north west)
+         -- ([xshift=-4.5cm, yshift=-2.6cm]current page.north);
+
+    % Right divider line
+    \draw[line width=1.4pt] ([xshift=4.5cm, yshift=-2.6cm]current page.north)
+         -- ([xshift=-1.2cm, yshift=-2.6cm]current page.north east);
+
+    % Thin line underneath
+    \draw[line width=0.6pt] ([xshift=1.2cm, yshift=-2.85cm]current page.north west)
+         -- ([xshift=-4.5cm, yshift=-2.85cm]current page.north);
+    \draw[line width=0.6pt] ([xshift=4.5cm, yshift=-2.85cm]current page.north)
+         -- ([xshift=-1.2cm, yshift=-2.85cm]current page.north east);
+
+    % Page number in the middle (Roman numeral)
+    \node at ([yshift=-2.72cm]current page.north) {\flufffont\large \Roman{page}};
   \end{tikzpicture}%
 }
 
