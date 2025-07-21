@@ -3,12 +3,14 @@
 % === Page Layout ===
 \usepackage[top=1.5cm, bottom=1.5cm, left=1.2cm, right=1.2cm]{geometry}
 \usepackage{multicol}
-\setlength{\columnsep}{1cm}          % Space between columns
-\setlength{\columnseprule}{0.4pt}    % Vertical divider line
+\setlength{\columnsep}{1cm}
+\setlength{\columnseprule}{0.4pt}
 
 % === Fonts & Typography ===
-\usepackage{fontspec}        % Enables custom fonts (requires XeLaTeX or LuaLaTeX)
-\setmainfont{KJV1611.otf}[Path=./, UprightFont=*]
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}                       % Main font
+\newfontfamily\headerfont{KJV1611.otf}[Path=./]        % Section header font
+
 \usepackage{microtype}
 \usepackage{parskip}
 \usepackage{xcolor}
@@ -24,9 +26,9 @@
 
 % === Header Logo (e.g. Imperial Aquila) ===
 \usepackage{tikz}
-\newcommand{\headerlogo}[2][width=4cm]{%
+\newcommand{\headerlogo}[2][width=6cm]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node at ([yshift=-0.7cm]current page.north) {\includegraphics[#1]{#2}};
+    \node at ([yshift=-1.5cm]current page.north) {\includegraphics[#1]{#2}};
   \end{tikzpicture}
 }
 
@@ -41,19 +43,19 @@
   \end{figure}
 }
 
-% === Bold Section Headers in KJV1611 ===
+% === Styled Section Headers ===
 \newcommand{\rpgsection}[1]{%
+  \vspace{0.8em}%
+  {\headerfont\bfseries\Large #1}\par%
   \vspace{0.5em}%
-  {\bfseries\Large #1}\par%
-  \vspace{0.3em}%
 }
 
 \begin{document}
 
 % === Header Logo ===
-\vspace{1.2cm}
 \headerlogo{aquila.png}
-\vspace{0.6cm}
+
+\vspace{1.8cm}  % Push content below logo
 
 \begin{multicols}{2}
 
