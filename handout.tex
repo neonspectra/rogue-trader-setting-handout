@@ -1,20 +1,16 @@
 \documentclass[10pt,a4paper]{article}
 
 % === Page Layout ===
-\usepackage[top=2.5cm, bottom=2.5cm, left=1.2cm, right=1.2cm]{geometry}
+\usepackage[top=2.8cm, bottom=2.5cm, left=1.2cm, right=1.2cm]{geometry}
 \usepackage{multicol}
 \setlength{\columnsep}{1cm}
 \setlength{\columnseprule}{0.4pt}
 
 % === Fonts ===
 \usepackage{fontspec}
-\setmainfont{Latin Modern Roman} % Body text
-
-% Section headers
-\newfontfamily\headerfont{KJV1611.otf}[Path=./]
-
-% Fluff fonts (for header/footer)
-\newfontfamily\flufffont{TT2020StyleE-Regular.ttf}[Path=./]
+\setmainfont{Latin Modern Roman}                       % Body font
+\newfontfamily\headerfont{KJV1611.otf}[Path=./]        % Section headers
+\newfontfamily\flufffont{TT2020StyleE-Regular.ttf}[Path=./] % Header/footer fluff
 
 \usepackage{microtype}
 \usepackage{parskip}
@@ -29,12 +25,36 @@
   \includegraphics[width=\paperwidth,height=\paperheight]{parchment.jpg}%
 }
 
-% === Header Logo (Imperial Aquila) ===
+% === Manual Fluff Header with Aquila ===
 \usepackage{tikz}
-\newcommand{\headerlogo}[2][width=4cm]{%
-  \begin{tikzpicture}[remember picture,overlay]
-    \node at ([yshift=-4.5cm]current page.north) {\includegraphics[#1]{#2}};
-  \end{tikzpicture}
+\usepackage{atbegshi}
+
+\newcommand{\fluffheader}{%
+  \begin{tikzpicture}[remember picture, overlay]
+    % Aquila logo at top center
+    \node at ([yshift=-1.2cm]current page.north) {\includegraphics[width=3.2cm]{aquila.png}};
+
+    % Left and right text
+    \node[anchor=west] at ([xshift=1.2cm, yshift=-2.2cm]current page.north west) {\flufffont\Large XLMDCCCXXXI};
+    \node[anchor=east] at ([xshift=-1.2cm, yshift=-2.2cm]current page.north east) {\flufffont\Large XLMDCCCXXXI};
+
+    % Double divider line
+    \draw[line width=1.4pt] ([xshift=1.2cm, yshift=-2.6cm]current page.north west) -- ([xshift=-1.2cm, yshift=-2.6cm]current page.north east);
+    \draw[line width=0.6pt] ([xshift=1.2cm, yshift=-2.85cm]current page.north west) -- ([xshift=-1.2cm, yshift=-2.85cm]current page.north east);
+  \end{tikzpicture}%
+}
+
+% === Footer Binary Signature ===
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\vspace{0.3em}{\flufffont\large +++++++++++++++++++++++++++1010001101100111+++++++++++++++++++++++++++}}
+
+% === Section Headers ===
+\newcommand{\rpgsection}[1]{%
+  \vspace{0.8em}%
+  {\headerfont\bfseries\Large #1}\par%
+  \vspace{0.5em}%
 }
 
 % === Images in Columns ===
@@ -48,36 +68,11 @@
   \end{figure}
 }
 
-% === Styled Section Headers ===
-\newcommand{\rpgsection}[1]{%
-  \vspace{0.8em}%
-  {\headerfont\bfseries\Large #1}\par%
-  \vspace{0.5em}%
-}
-
-% === Fluff Header (XLMDCCCXXXI) ===
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-
-% Header top center
-\fancyhead[C]{%
-  {\flufffont\Large XLMDCCCXXXI}\\[0.2em]
-  \rule{\textwidth}{1.5pt}\\[-0.2em]
-  \rule{\textwidth}{0.6pt}
-}
-
-% Footer bottom center
-\fancyfoot[C]{%
-  \vspace{0.2em}{\flufffont\large +++++++++++++++++++++++++++1010001101100111+++++++++++++++++++++++++++}
-}
-
 \begin{document}
 
-% === Header Logo ===
-\headerlogo{aquila.png}
+\fluffheader  % Imperial top layout
 
-\vspace{2.8cm}
+\vspace{3.5cm} % Push body down below fluff header
 
 \begin{multicols}{2}
 
