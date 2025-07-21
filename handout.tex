@@ -36,7 +36,7 @@
 
     % Left and right text
     \node[anchor=west] at ([xshift=1.2cm, yshift=-2.2cm]current page.north west) {\flufffont\Large XLMDCCCXXXI};
-    \node[anchor=east] at ([xshift=-1.2cm, yshift=-2.2cm]current page.north east) {\flufffont\Large XLMDCCCXXXI};
+    \node[anchor=east] at ([xshift=-1.2cm, yshift=-2.2cm]current page.north east) {\flufffont\Large Page \pageref};
 
     % Double divider line
     \draw[line width=1.4pt] ([xshift=1.2cm, yshift=-2.6cm]current page.north west) -- ([xshift=-1.2cm, yshift=-2.6cm]current page.north east);
@@ -72,37 +72,69 @@
 
 \fluffheader  % Imperial top layout
 
-\vspace{3.5cm} % Push body down below fluff header
+\vspace{0.5cm} % Push body down below fluff header
 
 \begin{multicols}{2}
 
-\rpgsection{Mission Briefing: Vault of the Heretek}
-Deep within the sump-layers of Hive Tranch, a renegade Tech-Priest has begun reawakening forbidden STCs. The Inquisition demands intervention.
+\rpgsection{Intro}
+\textit{It is the 41st Millennium. For more than a hundred centuries The Emperor has sat immobile on the Golden Throne of Earth. He is the Master of Mankind by the will of the gods, and master of a million worlds by the might of his inexhaustible armies. He is a rotting carcass writhing invisibly with power from the Dark Age of Technology. He is the Carrion Lord of the Imperium for whom a thousand souls are sacrificed every day, so that he may never truly die.}
 
-\colimage{map_sector_gamma.jpg}
+\textit{To be a man in such times is to be one amongst untold billions. It is to live in the cruelest and most bloody regime imaginable. These are the tales of those times. Forget the power of technology and science, for so much has been forgotten, never to be re-learned. Forget the promise of progress and understanding, for in the grim darkness of the far future there is only war. There is no peace amongst the stars, only an eternity of carnage and slaughter, and the laughter of thirsting gods.}
 
-\rpgsection{Known Threats}
+\rpgsection{Basic History}
 \begin{itemize}
-  \item Arc-flame turrets
-  \item Corrupted Skitarii patrols
-  \item Ambulatory Servo-coffins
+  \item It is the 41st millennium, but written history only goes back about 10,000 years at best.
+  \item The Emperor is the most powerful psychic being who ever existed. He built an empire that has expanded humanity to every corner of the galaxy, to billions of worlds and quadrillions of humans.
+  \item The Emperor is slowly dying. He has been on life support in a vegetative state for about 10,000 years after being mortally wounded in a failed coup by his closest advisor.
+  \item The Imperium of Man has been in a steady decline ever since the Emperor was struck down and rendered comatose.
 \end{itemize}
 
-\rpgsection{Objectives}
-\begin{enumerate}
-  \item Recover the relic core.
-  \item Destroy all cogitator nodes.
-  \item Cleanse the heretek with sanctioned flame.
-\end{enumerate}
+\rpgsection{Rogue Traders \& You}
+\textit{We must each of us occupy our preordained particular position. Would you wear a shoe on your head? Of course you wouldn't wear a shoe on your head. A shoe doesn't belong on your head. A shoe belongs on your foot. A hat belongs on your head. I am a hat. You are a shoe. I belong on the head. You belong on the foot.}
 
-\colimage[height=4cm]{data_core.jpg}
-
-\rpgsection{Rewards}
 \begin{itemize}
-  \item 150 Thrones each
-  \item Favor of Ordo Hereticus
-  \item Access to Mechanicus vault requests
+  \item You play as the commanding officers and immediate retinue of a Rogue Trader. You serve as the top-level leaders of a voidship: think “Star Trek” bridge crew, but evil.
+  \item A Rogue Trader is basically a space trillionaire oligarch whose family was granted permission through a Warrant of Trade signed by the Emperor himself to go out into the far reaches of uncivilised space and bring in wealth to the Imperium by any means necessary.
+  \item A Rogue Trader’s power is derived from their nobility and their subjects and planets who serve under them in their fiefdom. The Rogue Trader’s bloodline was chosen by god and thus their word is law in their domain.
+  \item However, even the nobility of an illustrious Rogue Trader is precarious. If you have anything of value in this harsh world, there will always be someone or something conniving to take it from you.
 \end{itemize}
+
+\rpgsection{Society}
+\textit{An open mind is like a fortress with its gates unbarred and unguarded. Those who are small minded in their faith are blessed as they will not fall or stray into corruption.}
+
+\begin{itemize}
+  \item The Imperium of Man is an incredibly collectivist ant colony defined by a wanton disregard for the value of human life. The very concepts of individual agency, self determination, and democracy are utterly alien to most Imperial denizens.
+  \item Society in the Imperium of Man has been organised around the uncompromising worship of the Emperor. To worship any other or to worship none is heresy and is punishable by death.
+  \item Curiosity is seen as dangerous and innovation is the road to heresy. “Monkey see, monkey do” is how the Imperium continues to run itself on autopilot.
+  \item Humanity is a reflection of the Emperor’s image, and the human form is sacred. Genetic abnormalities, mutations, and alien life are all considered heretical affronts to the holiness of the human form and are thus punishable by death.
+\end{itemize}
+
+\rpgsection{Technology}
+\textit{Great Maker, whose Motive Force infused this servant once with the spark of life and service to the machine. Whose blessed algorithms guided, whose oils consecrated and whose augmentations made more of this once-true construct than he could ever have been. Embrace the glorious workings of this, Your servant, and admit him once more to the wondrous interface of godly communion.}
+
+\begin{itemize}
+  \item Technology and its proliferation is considered dangerous. Artificial intelligence is categorically heretical.
+  \item The use, distribution, and understanding of all technological devices in the Imperium is highly regulated by an insular priestly order called the Adeptus Mechanicus.
+  \item The Adeptus Mechanicus worship a machine god called the Omnissiah, who they believe they can become closer to and commune with by removing their flesh and replacing their body parts with crude mechanical augmentations.
+  \item The Adeptus Mechanicus believe that their reverence of the Omnissiah grants them the ability to operate technology through prayer, communion, and appeasement of the machine spirits that reside within technological devices.
+\end{itemize}
+
+\rpgsection{Space Travel}
+\begin{itemize}
+  \item Spacecraft (known as void craft or voidships) are gargantuan, spanning kilometres in size and generally contain a population of \textasciitilde15,000–30,000 people on a single ship.
+  \item Voidships are hundreds to thousands of years old, with the technology to build them often having been lost. Most inhabitants of a voidship were born there, have never left, and have family histories going back many generations on the same ship.
+  \item Void craft achieve FTL travel through an alternate dimension full of daemons called the Warp. This works basically like the Nether in Minecraft.
+  \item A three-eyed mutant human called a Navigator is required to navigate the Warp. A ship’s Navigator looks directly into the Warp with their third eye to see the Emperor’s psychic signature on Terra as their North Star to determine the ship’s heading.
+\end{itemize}
+
+\rpgsection{The Warp}
+\begin{itemize}
+  \item The Warp is a manifestation of every human and non-human’s souls and emotions. It is full of daemons and other unspeakable horrors that serve evil Chaos Gods and feed off of pure suffering and malice.
+  \item Exposure to the Warp causes immediate insanity and horrific mutation to any human who is not a Navigator. Being corrupted by the Warp taints your mind with the influence of the aforementioned Chaos Gods.
+  \item People with an innate connection to the Warp are called ‘psykers’ and have psychic powers. Their existence is rare, dangerous, and illegal (except when they’re a Navigator or otherwise sanctioned).
+  \item Voidships are protected from the daemonic influence of the Warp via a force field called a Gellar field. Gellar fields are imperfect, and it’s not uncommon for fluctuations to cause eldritch daemonic horrors to appear on voidships and kill people, drive them insane, or much worse.
+\end{itemize}
+
 
 \end{multicols}
 
