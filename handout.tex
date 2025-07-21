@@ -8,17 +8,20 @@
 
 % === Fonts ===
 \usepackage{fontspec}
-\setmainfont{Latin Modern Roman}                              % Body text
-\newfontfamily\headerfont{KJV1611.otf}[Path=./]              % Section headers
-\newfontfamily\flufffont{TT2020StyleE-Regular.ttf}[Path=./]  % Header/footer
+\setmainfont{Latin Modern Roman} % Body text
+
+% Section headers
+\newfontfamily\headerfont{KJV1611.otf}[Path=./]
+
+% Fluff fonts (for header/footer)
+\newfontfamily\flufffont{TT2020StyleE-Regular.ttf}[Path=./]
 
 \usepackage{microtype}
 \usepackage{parskip}
 \usepackage{xcolor}
 
 % === No Page Numbers ===
-\pagestyle{fancy}
-\fancyhf{}
+\pagestyle{empty}
 
 % === Background Image (Parchment) ===
 \usepackage{eso-pic}
@@ -26,28 +29,11 @@
   \includegraphics[width=\paperwidth,height=\paperheight]{parchment.jpg}%
 }
 
-% === TikZ (for overlayed logo and anchors) ===
+% === Header Logo (Imperial Aquila) ===
 \usepackage{tikz}
-
-% === Fluff Header with Divider and Anchor ===
-\fancyhead[C]{%
-  \begin{tikzpicture}[remember picture,overlay]
-    \node (headeranchor) at (current page.north) {}; % Anchor for Aquila
-  \end{tikzpicture}
-  {\flufffont\Large XLMDCCCXXXI}\\[0.2em]
-  \rule{\textwidth}{1.5pt}\\[-0.2em]
-  \rule{\textwidth}{0.6pt}
-}
-
-% === Footer with Binary String ===
-\fancyfoot[C]{%
-  \vspace{0.2em}{\flufffont\large +++++++++++++++++++++++++++1010001101100111+++++++++++++++++++++++++++}
-}
-
-% === Aquila Logo (Placed below headeranchor) ===
 \newcommand{\headerlogo}[2][width=4cm]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node at ([yshift=-1.5cm]headeranchor) {\includegraphics[#1]{#2}};
+    \node at ([yshift=-2.5cm]current page.north) {\includegraphics[#1]{#2}};
   \end{tikzpicture}
 }
 
@@ -69,14 +55,30 @@
   \vspace{0.5em}%
 }
 
+% === Fluff Header (XLMDCCCXXXI) ===
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+% Header top center
+\fancyhead[C]{%
+  {\flufffont\Large XLMDCCCXXXI}\\[0.2em]
+  \rule{\textwidth}{1.5pt}\\[-0.2em]
+  \rule{\textwidth}{0.6pt}
+}
+
+% Footer bottom center
+\fancyfoot[C]{%
+  \vspace{0.2em}{\flufffont\large +1010001101100111+}
+}
+
 \begin{document}
 
 % === Header Logo ===
 \headerlogo{aquila.png}
 
-\vspace{2.8cm} % Adjust space to balance after Aquila
+\vspace{2.8cm}
 
-% === Two-Column RPG Content ===
 \begin{multicols}{2}
 
 \rpgsection{Mission Briefing: Vault of the Heretek}
