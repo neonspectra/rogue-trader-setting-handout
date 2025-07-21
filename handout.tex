@@ -21,49 +21,33 @@
 
 % === Background Image (Parchment) ===
 \usepackage{eso-pic}
-\AddToShipoutPictureBG*{%
+\AddToShipoutPictureBG{%
   \includegraphics[width=\paperwidth,height=\paperheight]{parchment.jpg}%
 }
 
-% === Manual Fluff Header with Aquila ===
+% === Fancy Header and Footer (Every Page) ===
+\usepackage{fancyhdr}
 \usepackage{tikz}
-\usepackage{atbegshi}
+\pagestyle{fancy}
+\fancyhf{}
 
-\newcommand{\fluffheader}{%
+% Header with Aquila + split text + double divider
+\fancyhead[C]{%
   \begin{tikzpicture}[remember picture, overlay]
-    % Aquila logo at top center
+    % Aquila logo
     \node at ([yshift=-1.2cm]current page.north) {\includegraphics[width=3.2cm]{aquila.png}};
 
-    % Left and right text
+    % Left and right XLMDCCCXXXI
     \node[anchor=west] at ([xshift=1.2cm, yshift=-2.2cm]current page.north west) {\flufffont\Large XLMDCCCXXXI};
-    \node[anchor=east] at ([xshift=-1.2cm, yshift=-2.2cm]current page.north east) {\flufffont\Large XLMDCCCXXXI};
+    \node[anchor=east] at ([xshift=-1.2cm, yshift=-2.2cm]current page.north east) {\flufffont\Large Page \Roman{page}};
 
     % Double divider line
-    %\draw[line width=1.4pt] ([xshift=1.2cm, yshift=-2.6cm]current page.north west) -- ([xshift=-1.2cm, yshift=-2.6cm]current page.north east);
-    %\draw[line width=0.6pt] ([xshift=1.2cm, yshift=-2.85cm]current page.north west) -- ([xshift=-1.2cm, yshift=-2.85cm]current page.north east);
-    % Left divider line
-    \draw[line width=1.4pt] ([xshift=1.2cm, yshift=-2.6cm]current page.north west)
-         -- ([xshift=-4.5cm, yshift=-2.6cm]current page.north);
-
-    % Right divider line
-    \draw[line width=1.4pt] ([xshift=4.5cm, yshift=-2.6cm]current page.north)
-         -- ([xshift=-1.2cm, yshift=-2.6cm]current page.north east);
-
-    % Thin line underneath
-    \draw[line width=0.6pt] ([xshift=1.2cm, yshift=-2.85cm]current page.north west)
-         -- ([xshift=-4.5cm, yshift=-2.85cm]current page.north);
-    \draw[line width=0.6pt] ([xshift=4.5cm, yshift=-2.85cm]current page.north)
-         -- ([xshift=-1.2cm, yshift=-2.85cm]current page.north east);
-
-    % Page number in the middle (Roman numeral)
-    \node at ([yshift=-2.72cm]current page.north) {\flufffont\large \Roman{page}};
-  \end{tikzpicture}%
+    \draw[line width=1.4pt] ([xshift=1.2cm, yshift=-2.6cm]current page.north west) -- ([xshift=-1.2cm, yshift=-2.6cm]current page.north east);
+    \draw[line width=0.6pt] ([xshift=1.2cm, yshift=-2.85cm]current page.north west) -- ([xshift=-1.2cm, yshift=-2.85cm]current page.north east);
+  \end{tikzpicture}
 }
 
 % === Footer Binary Signature ===
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
 \fancyfoot[C]{\vspace{0.3em}{\flufffont\large +++++++++++++++++++++++++++1010001101100111+++++++++++++++++++++++++++}}
 
 % === Section Headers ===
@@ -85,8 +69,6 @@
 }
 
 \begin{document}
-
-\fluffheader  % Imperial top layout
 
 \vspace{0.5cm} % Push body down below fluff header
 
