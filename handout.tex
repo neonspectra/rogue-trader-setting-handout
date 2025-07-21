@@ -6,7 +6,6 @@
 \setlength{\columnsep}{1cm}
 
 % Font & layout tools
-\usepackage{lmodern}
 \usepackage{graphicx}
 \usepackage{parskip}
 \usepackage{float}
@@ -17,19 +16,43 @@
 % No page numbering
 \pagestyle{empty}
 
-% Background image
+% Background
 \usepackage{eso-pic}
 \AddToShipoutPictureBG*{%
   \includegraphics[width=\paperwidth,height=\paperheight]{parchment.jpg}%
 }
 
-% Optional logo at top center
+% Resizable logo with aspect ratio
 \usepackage{tikz}
-\newcommand{\headerlogo}[1]{%
+\newcommand{\headerlogo}[2][5cm]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node at ([yshift=-0.7cm]current page.north) {\includegraphics[height=1.5cm]{#1}};
+    \node at ([yshift=-0.7cm]current page.north) {\includegraphics[width=#1,keepaspectratio]{#2}};
   \end{tikzpicture}
 }
+
+% Font embedding (using TTF with pdflatex)
+\usepackage[T1]{fontenc}
+\usepackage{fontspec} % doesn't work with pdflatex, but included for fallback
+\usepackage{tgtermes} % fallback serif font
+\usepackage{sectsty}
+
+\newcommand{\loadmedievalfont}{%
+  \renewcommand{\rmdefault}{ua1}%
+  \sectionfont{\rmfamily\Large\bfseries}
+  \subsectionfont{\rmfamily\large\bfseries}
+}
+
+% Manual font definition
+\makeatletter
+\newcommand{\embedmedievalfont}{
+  \IfFileExists{fonts/blocuswebfont.ttf}{
+    \pdfmapfile{=ua1.map}
+    \DeclareFontFamily{T1}{ua1}{}
+    \DeclareFontShape{T1}{ua1}{m}{n}{<-> [1.05] fonts/blocuswebfont.ttf}{}
+    \loadmedievalfont
+  }{}
+}
+\makeatother
 
 % Image in column wrapper
 \newcommand{\colimage}[2][]{%
@@ -41,37 +64,26 @@
 
 \begin{document}
 
-% Include logo at top of page
+% Load header + medieval font
 \headerlogo{aquila.png}
-
-\vspace{0.5cm} % Push content below the logo
+\embedmedievalfont
+\vspace{0.5cm}
 
 \begin{multicols}{2}
 
-% === Content Starts ===
+\section*{Mission: Faith & Flame}
+Deep within the underhive, an unsanctioned preacher spreads rebellion through corrupted rites...
 
-\section*{Mission Briefing: Lair of the Heretek}
-In the forgotten sub-levels of Hive Tranch, a rogue Tech-Priest has built a cult of steel and madness. Your kill-team must infiltrate and cleanse.
-
-\colimage{map_sector_gamma.jpg}
-
-\subsection*{Known Threats}
-\begin{itemize}
-  \item Servo-skulls wired for detonation
-  \item Corrupted Skitarii
-  \item Techno-daemonic constructs
-\end{itemize}
+\colimage{hive_map.jpg}
 
 \subsection*{Objectives}
 \begin{enumerate}
-  \item Destroy the Heretek's data-core.
-  \item Recover relic STC fragments.
-  \item Extract alive if possible.
+  \item Silence the preacher
+  \item Purge the heretic enclave
+  \item Retrieve stolen relics
 \end{enumerate}
 
-\colimage[height=4cm]{data_core.jpg}
-
-% === Content Ends ===
+\colimage[height=4cm]{relics.png}
 
 \end{multicols}
 
