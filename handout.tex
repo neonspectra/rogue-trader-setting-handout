@@ -45,10 +45,10 @@
 % Manual font definition
 \makeatletter
 \newcommand{\embedmedievalfont}{
-  \IfFileExists{fonts/blocuswebfont.ttf}{
+  \IfFileExists{fonts/Blocus.otf}{
     \pdfmapfile{=ua1.map}
     \DeclareFontFamily{T1}{ua1}{}
-    \DeclareFontShape{T1}{ua1}{m}{n}{<-> [1.05] fonts/blocuswebfont.ttf}{}
+    \DeclareFontShape{T1}{ua1}{m}{n}{<-> [1.05] fonts/Blocus.otf}{}
     \loadmedievalfont
   }{}
 }
