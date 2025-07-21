@@ -44,7 +44,6 @@
     % Double divider line
     \draw[line width=1.4pt] ([xshift=1.2cm, yshift=-2.6cm]current page.north west) -- ([xshift=-1.2cm, yshift=-2.6cm]current page.north east);
     \draw[line width=0.6pt] ([xshift=1.2cm, yshift=-2.85cm]current page.north west) -- ([xshift=-1.2cm, yshift=-2.85cm]current page.north east);
-  \vspace{1.0cm} % Push body down below fluff header
   \end{tikzpicture}
 }
 
@@ -70,6 +69,8 @@
 }
 
 \begin{document}
+
+\noindent\raisebox{1cm}[0pt][0pt]{\makebox[0pt][l]{}}
 
 \begin{multicols}{2}
 
