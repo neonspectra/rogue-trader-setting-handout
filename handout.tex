@@ -3,14 +3,14 @@
 % === Page Layout ===
 \usepackage[top=1.5cm, bottom=1.5cm, left=1.2cm, right=1.2cm]{geometry}
 \usepackage{multicol}
-\setlength{\columnsep}{1cm}
+\setlength{\columnsep}{1cm}          % Space between columns
+\setlength{\columnseprule}{0.4pt}    % Vertical divider line
 
 % === Fonts & Typography ===
 \usepackage{fontspec}        % Enables custom fonts (requires XeLaTeX or LuaLaTeX)
-\setmainfont{Blocus.otf}[Path=./, UprightFont=*] % Font file in current directory
-
-\usepackage{microtype}       % Better spacing
-\usepackage{parskip}         % Space between paragraphs
+\setmainfont{Blocus.otf}[Path=./, UprightFont=*]
+\usepackage{microtype}
+\usepackage{parskip}
 \usepackage{xcolor}
 
 % === No Page Numbers ===
@@ -41,29 +41,35 @@
   \end{figure}
 }
 
+% === Bold Section Headers in Blocus ===
+\newcommand{\rpgsection}[1]{%
+  \vspace{0.5em}%
+  {\bfseries\Large #1}\par%
+  \vspace{0.3em}%
+}
+
 \begin{document}
 
 % === Header Logo ===
-\headerlogo{aquila.png}  % Adjust width via optional argument
+\headerlogo{aquila.png}
 
-\vspace{1.2cm}  % Push content below logo
+\vspace{1.2cm}
 
-% === Two Column Content ===
 \begin{multicols}{2}
 
-\section*{Mission Briefing: Vault of the Heretek}
+\rpgsection{Mission Briefing: Vault of the Heretek}
 Deep within the sump-layers of Hive Tranch, a renegade Tech-Priest has begun reawakening forbidden STCs. The Inquisition demands intervention.
 
-  \colimage{map_sector_gamma.jpg}
+\colimage{map_sector_gamma.jpg}
 
-\subsection*{Known Threats}
+\rpgsection{Known Threats}
 \begin{itemize}
   \item Arc-flame turrets
   \item Corrupted Skitarii patrols
   \item Ambulatory Servo-coffins
 \end{itemize}
 
-\subsection*{Objectives}
+\rpgsection{Objectives}
 \begin{enumerate}
   \item Recover the relic core.
   \item Destroy all cogitator nodes.
@@ -72,7 +78,7 @@ Deep within the sump-layers of Hive Tranch, a renegade Tech-Priest has begun rea
 
 \colimage[height=4cm]{data_core.jpg}
 
-\subsection*{Rewards}
+\rpgsection{Rewards}
 \begin{itemize}
   \item 150 Thrones each
   \item Favor of Ordo Hereticus
