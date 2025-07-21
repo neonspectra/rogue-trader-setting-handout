@@ -1,15 +1,20 @@
 \documentclass[10pt,a4paper]{article}
 
 % === Page Layout ===
-\usepackage[top=1.5cm, bottom=1.5cm, left=1.2cm, right=1.2cm]{geometry}
+\usepackage[top=2.5cm, bottom=2.5cm, left=1.2cm, right=1.2cm]{geometry}
 \usepackage{multicol}
 \setlength{\columnsep}{1cm}
 \setlength{\columnseprule}{0.4pt}
 
-% === Fonts & Typography ===
+% === Fonts ===
 \usepackage{fontspec}
-\setmainfont{Latin Modern Roman}                       % Main font
-\newfontfamily\headerfont{KJV1611.otf}[Path=./]        % Section header font
+\setmainfont{Latin Modern Roman} % Body text
+
+% Section headers
+\newfontfamily\headerfont{KJV1611.otf}[Path=./]
+
+% Fluff fonts (for header/footer)
+\newfontfamily\flufffont{TT2020StyleE-Regular.ttf}[Path=./]
 
 \usepackage{microtype}
 \usepackage{parskip}
@@ -24,11 +29,11 @@
   \includegraphics[width=\paperwidth,height=\paperheight]{parchment.jpg}%
 }
 
-% === Header Logo (e.g. Imperial Aquila) ===
+% === Header Logo (Imperial Aquila) ===
 \usepackage{tikz}
-\newcommand{\headerlogo}[2][width=6cm]{%
+\newcommand{\headerlogo}[2][width=4cm]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node at ([yshift=-1.5cm]current page.north) {\includegraphics[#1]{#2}};
+    \node at ([yshift=-2.5cm]current page.north) {\includegraphics[#1]{#2}};
   \end{tikzpicture}
 }
 
@@ -50,12 +55,29 @@
   \vspace{0.5em}%
 }
 
+% === Fluff Header (XLMDCCCXXXI) ===
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+% Header top center
+\fancyhead[C]{%
+  {\flufffont\Large XLMDCCCXXXI}\\[0.2em]
+  \rule{\textwidth}{1.5pt}\\[-0.2em]
+  \rule{\textwidth}{0.6pt}
+}
+
+% Footer bottom center
+\fancyfoot[C]{%
+  \vspace{0.2em}{\flufffont\large +1010001101100111+}
+}
+
 \begin{document}
 
 % === Header Logo ===
 \headerlogo{aquila.png}
 
-\vspace{1.8cm}  % Push content below logo
+\vspace{2.8cm}
 
 \begin{multicols}{2}
 
