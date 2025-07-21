@@ -1,60 +1,39 @@
 \documentclass[10pt,a4paper]{article}
 
-% Page setup
+% === Page Layout ===
 \usepackage[top=1.5cm, bottom=1.5cm, left=1.2cm, right=1.2cm]{geometry}
 \usepackage{multicol}
 \setlength{\columnsep}{1cm}
 
-% Font & layout tools
-\usepackage{graphicx}
-\usepackage{parskip}
-\usepackage{float}
-\usepackage{caption}
-\usepackage{microtype}
+% === Fonts & Typography ===
+\usepackage{fontspec}        % Enables custom fonts (requires XeLaTeX or LuaLaTeX)
+\setmainfont{Blocus.otf}[Path=./, UprightFont=*] % Font file in current directory
+
+\usepackage{microtype}       % Better spacing
+\usepackage{parskip}         % Space between paragraphs
 \usepackage{xcolor}
 
-% No page numbering
+% === No Page Numbers ===
 \pagestyle{empty}
 
-% Background
+% === Background Image (Parchment) ===
 \usepackage{eso-pic}
 \AddToShipoutPictureBG*{%
   \includegraphics[width=\paperwidth,height=\paperheight]{parchment.jpg}%
 }
 
-% Resizable logo with aspect ratio
+% === Header Logo (e.g. Imperial Aquila) ===
 \usepackage{tikz}
-\newcommand{\headerlogo}[2][5cm]{%
+\newcommand{\headerlogo}[2][width=4cm]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node at ([yshift=-0.7cm]current page.north) {\includegraphics[width=#1,keepaspectratio]{#2}};
+    \node at ([yshift=-0.7cm]current page.north) {\includegraphics[#1]{#2}};
   \end{tikzpicture}
 }
 
-% Font embedding (using TTF with pdflatex)
-\usepackage[T1]{fontenc}
-%\usepackage{fontspec} % doesn't work with pdflatex, but included for fallback
-\usepackage{tgtermes} % fallback serif font
-\usepackage{sectsty}
-
-\newcommand{\loadmedievalfont}{%
-  \renewcommand{\rmdefault}{ua1}%
-  \sectionfont{\rmfamily\Large\bfseries}
-  \subsectionfont{\rmfamily\large\bfseries}
-}
-
-% Manual font definition
-\makeatletter
-\newcommand{\embedmedievalfont}{
-  \IfFileExists{fonts/Blocus.otf}{
-    \pdfmapfile{=ua1.map}
-    \DeclareFontFamily{T1}{ua1}{}
-    \DeclareFontShape{T1}{ua1}{m}{n}{<-> [1.05] fonts/Blocus.otf}{}
-    \loadmedievalfont
-  }{}
-}
-\makeatother
-
-% Image in column wrapper
+% === Images in Columns ===
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
 \newcommand{\colimage}[2][]{%
   \begin{figure}[H]
     \centering
@@ -64,26 +43,41 @@
 
 \begin{document}
 
-% Load header + medieval font
-\headerlogo{aquila.png}
-\embedmedievalfont
-\vspace{0.5cm}
+% === Header Logo ===
+\headerlogo{aquila.png}  % Adjust width via optional argument
 
+\vspace{1.2cm}  % Push content below logo
+
+% === Two Column Content ===
 \begin{multicols}{2}
 
-\section*{Mission: Faith & Flame}
-Deep within the underhive, an unsanctioned preacher spreads rebellion through corrupted rites...
+\section*{Mission Briefing: Vault of the Heretek}
+Deep within the sump-layers of Hive Tranch, a renegade Tech-Priest has begun reawakening forbidden STCs. The Inquisition demands intervention.
 
-\colimage{hive_map.jpg}
+  \colimage{map_sector_gamma.jpg}
+
+\subsection*{Known Threats}
+\begin{itemize}
+  \item Arc-flame turrets
+  \item Corrupted Skitarii patrols
+  \item Ambulatory Servo-coffins
+\end{itemize}
 
 \subsection*{Objectives}
 \begin{enumerate}
-  \item Silence the preacher
-  \item Purge the heretic enclave
-  \item Retrieve stolen relics
+  \item Recover the relic core.
+  \item Destroy all cogitator nodes.
+  \item Cleanse the heretek with sanctioned flame.
 \end{enumerate}
 
-\colimage[height=4cm]{relics.png}
+\colimage[height=4cm]{data_core.jpg}
+
+\subsection*{Rewards}
+\begin{itemize}
+  \item 150 Thrones each
+  \item Favor of Ordo Hereticus
+  \item Access to Mechanicus vault requests
+\end{itemize}
 
 \end{multicols}
 
