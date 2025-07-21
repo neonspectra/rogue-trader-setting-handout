@@ -1,0 +1,78 @@
+\documentclass[10pt,a4paper]{article}
+
+% Page setup
+\usepackage[top=1.5cm, bottom=1.5cm, left=1.2cm, right=1.2cm]{geometry}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+% Font & layout tools
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{microtype}
+\usepackage{xcolor}
+
+% No page numbering
+\pagestyle{empty}
+
+% Background image
+\usepackage{eso-pic}
+\AddToShipoutPictureBG*{%
+  \includegraphics[width=\paperwidth,height=\paperheight]{parchment.jpg}%
+}
+
+% Optional logo at top center
+\usepackage{tikz}
+\newcommand{\headerlogo}[1]{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \node at ([yshift=-0.7cm]current page.north) {\includegraphics[height=1.5cm]{#1}};
+  \end{tikzpicture}
+}
+
+% Image in column wrapper
+\newcommand{\colimage}[2][]{%
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth, #1]{#2}
+  \end{figure}
+}
+
+\begin{document}
+
+% Include logo at top of page
+\headerlogo{aquila.png}
+
+\vspace{0.5cm} % Push content below the logo
+
+\begin{multicols}{2}
+
+% === Content Starts ===
+
+\section*{Mission Briefing: Lair of the Heretek}
+In the forgotten sub-levels of Hive Tranch, a rogue Tech-Priest has built a cult of steel and madness. Your kill-team must infiltrate and cleanse.
+
+\colimage{map_sector_gamma.jpg}
+
+\subsection*{Known Threats}
+\begin{itemize}
+  \item Servo-skulls wired for detonation
+  \item Corrupted Skitarii
+  \item Techno-daemonic constructs
+\end{itemize}
+
+\subsection*{Objectives}
+\begin{enumerate}
+  \item Destroy the Heretek's data-core.
+  \item Recover relic STC fragments.
+  \item Extract alive if possible.
+\end{enumerate}
+
+\colimage[height=4cm]{data_core.jpg}
+
+% === Content Ends ===
+
+\end{multicols}
+
+\end{document}
