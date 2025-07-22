@@ -28,46 +28,11 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: handout-a4.tex
+          root_file: handout.tex
           latexmk_use_xelatex: true
-      - name: Upload A4 PDF file
+      - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
-          name: Handout-Native-A4
-          path: handout-a4.pdf
-      - name: Install minimal TeX stack
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y \
-            texlive-latex-base \
-            texlive-latex-recommended \
-            texlive-extra-utils \
-            pdfjam \
-            poppler-utils \
-            ghostscript
-      - name: Convert A4 to B4-centered
-        run: |
-          pdfjam handout.pdf \
-            --papersize '{250mm,353mm}' \
-            --noautoscale true \
-            --scale 1 \
-            --offset '0cm 0cm' \
-            --outfile handout-fullbleed-b4.pdf
-      - name: Upload B4 PDF file
-        uses: actions/upload-artifact@v4
-        with:
-          name: Handout-Fullbleed-B4
-          path: handout-fullbleed-b4.pdf
-      - name: Convert A4 to US Tabloid-centred
-        run: |
-          pdfjam handout.pdf \
-            --papersize '{11in,17in}' \
-            --noautoscale true \
-            --scale 1 \
-            --offset '0cm 0cm' \
-            --outfile handout-fullbleed-us-tabloid.pdf
-      - name: Upload US Tabloid PDF file
-        uses: actions/upload-artifact@v4
-        with:
-          name: Handout-Fullbleed-US-Tabloid
-          path: handout-fullbleed-us-tabloid.pdf
+          name: PDF
+          path: handout.pdf
+
