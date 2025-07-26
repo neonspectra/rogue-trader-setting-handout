@@ -1,6 +1,6 @@
 # Warhammer 40k: Rogue Trader // Setting One-Pager Handout
 
-This handout is intended for use as an introductory primer for people getting into the Rogue Trader TTRPG by Fantasy Flight Games. This document is an unlicensed fan work and is not associated with or endorsed by Games Workshop.
+This handout is intended for use as an introductory primer for people getting into [Rogue Trader, the tabletop roleplaying game by Fantasy Flight Games](https://wh40k.lexicanum.com/wiki/Rogue_Trader_Core_Rulebook). This handout is an unlicensed fan work and is not associated with or endorsed by Games Workshop.
 
 Handout and source code released under [Creative Commons CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en). Please feel free to use it at your table or fork this repo, compile it yourself, and make your own fluffy in-universe style documents with it. 
 
@@ -9,9 +9,9 @@ Handout and source code released under [Creative Commons CC BY-SA 4.0](https://c
   <img src="sample/thumb-pg2.png" alt="Thumbnail - Page 2" width="200"/>
 </p>
 
-I created this handout because I wanted to run a Rogue Trader game for a new group with little to no familiarity with the Warhammer 40k universe. 
+I created this handout because I wanted to run a Rogue Trader game for a new group with little to no familiarity to the Warhammer 40k universe. 
 
-Given how vast, complicated, and hard to get into this setting is, my goal with this handout is to convey the "absolute bare minimum shit you need to know" in an economical single-page handout. Be aware that I've generalised, glossed over, and dumbed a lot of details to ensure that all the text fits onto two sides of a single sheet of paper. Consider this a conversation starter for your players! :)
+Given how vast, complicated, and hard to get into this setting is, my goal with this handout is to convey the absolute bare minimum "shit you need to know" in an economical single-page handout. Be aware that I've generalised, glossed over, and dumbed down a lot of details to ensure that all the text fits onto two sides of a single sheet of paper. Consider this a conversation starter for your players! :)
 
 Nobody likes being given a boring wall of text to read, so I've spruced up the layout to make the handout feel more immersive and easier on the eyes so that my players are more likely to actually read it.
 
