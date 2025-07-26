@@ -26,7 +26,7 @@ None of the italics flavour quotes are attributable to me. Here is where they al
 - "*An open mind is like a fortress with its gates unbarred and unguarded.*" - Relic Entertainment, *Warhammer 40,000: Dawn of War* [Video Game], THQ, Sep. 2004.
 - "*Facts are chains that bind perception and fetter truth.*" - R. Priestly, A. Chambers, G. Thorpe, I. Pickstock, and J. Johnson, *Warhammer 40,000 (3rd Edition)*. Nottingham: Games Workshop, 2000. ISBN 1-869893-19-0. Page 70.
 - "*Those who are small minded [...] stray into corruption.*" - /u/hidden_emperor, “Re: Meaning of a 40k quote,” Reddit, r/40kLore, Aug. 25, 2021. [Online]. Available: https://old.reddit.com/r/40kLore/comments/pb00cr/meaning_of_a_40k_quote/ha8d2yx/. [Accessed: Jul. 21, 2025].
-- "*Great Maker, whose Motive Force [..] godly communion.*" - R. Sanders, *Adeptus Mechanicus: Tech-Priest*. Nottingham: Black Library, 2015. ISBN 978-1782518051.
+- "*Great Maker, whose Motive Force [...] godly communion.*" - R. Sanders, *Adeptus Mechanicus: Tech-Priest*. Nottingham: Black Library, 2015. ISBN 978-1782518051.
 - "*Between the stars the ancient unseen enemies of mankind wait and hunger.*" - R. Priestly, A. Chambers. *Warhammer 40,000 Codex Imperialis (2nd Edition)*. Nottingham: Games Workshop, 1993. ISBN 978-1869893835. Page 7.
 - "*I have seen darkness [...] So I step off and welcome the dark.*" - N. Kyme, *Vulkan Lives*. Nottingham: Black Library, 2013. ISBN 9781849705127.
 
