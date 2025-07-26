@@ -14,7 +14,7 @@ I created this handout because I wanted to run a Rogue Trader game for a new gro
 
 Given how vast, complicated, and hard to get into this setting is, my goal was convey the absolute bare minimum "shit you need to know" in an economical single-page handout for new players. Be aware that I've generalised, glossed over, and dumbed down a lot of details to ensure that all the text fits onto two sides of a single sheet of paper. Consider this a conversation starter for your players! :)
 
-Nobody likes being given a boring wall of text to read, so I've spruced up the layout with eye candy to make the handout feel more immersive so that our players are more likely to actually read it.
+Nobody likes being given a boring wall of text, so I've spruced up the layout with eye candy to make the handout feel more immersive so that our players are more likely to actually read it.
 
 ## Quote References
 
