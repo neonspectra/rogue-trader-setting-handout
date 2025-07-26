@@ -82,6 +82,8 @@ Remember to print with flip on long edge when printing in duplex so that the bac
 
 ## License
 
+Handout by Neon | [neosynth.net](https://neosynth.net) | GitHub: [neonspectra/rogue-trader-setting-handout](https://github.com/neonspectra/rogue-trader-setting-handout/)
+
 This work and source code is licensed under a
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa]. Sharing is caring.
 
