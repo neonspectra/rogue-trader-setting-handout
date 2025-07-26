@@ -22,7 +22,7 @@ None of the italics flavour quotes are attributable to me. Here is where they al
 
 - "*It is the 41st Millennium [...] thirsting gods*" - R. Priestley, *Warhammer 40,000 Rogue Trader*. Nottingham: Games Workshop, 1987. ISBN 1-869893-23-9. Page 1.
 - "*We must, each of us, occupy our preordained particular [...] You belong on the foot.*" - *Snowpiercer*, directed by Bong Joon-ho, IMDB tt1706620, 2013.
-- "Faith. Honour. Vigilance." - A. Chambers, *Codex: Dark Angels (3rd Edition)*. Nottingham: Games Workshop, 2003. ISBN 1-84154-302-0. Page 24.
+- "*Faith. Honour. Vigilance.*" - A. Chambers, *Codex: Dark Angels (3rd Edition)*. Nottingham: Games Workshop, 2003. ISBN 1-84154-302-0. Page 24.
 - "*An open mind is like a fortress with its gates unbarred and unguarded.*" - Relic Entertainment, *Warhammer 40,000: Dawn of War* [Video Game], THQ, Sep. 2004.
 - "*Facts are chains that bind perception and fetter truth.*" - R. Priestly, A. Chambers, G. Thorpe, I. Pickstock, and J. Johnson, *Warhammer 40,000 (3rd Edition)*. Nottingham: Games Workshop, 2000. ISBN 1-869893-19-0. Page 70.
 - "*Those who are small minded [...] stray into corruption.*" - /u/hidden_emperor, “Re: Meaning of a 40k quote,” Reddit, r/40kLore, Aug. 25, 2021. [Online]. Available: https://old.reddit.com/r/40kLore/comments/pb00cr/meaning_of_a_40k_quote/ha8d2yx/. [Accessed: Jul. 21, 2025].
