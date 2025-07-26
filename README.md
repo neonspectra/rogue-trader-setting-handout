@@ -83,7 +83,7 @@ Remember to print with flip on long edge when printing in duplex so that the bac
 ## License
 
 This work and source code is licensed under a
-[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa]. Sharing is caring.
 
 [![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
 <a href="https://en.wikipedia.org/wiki/Copyleft"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Sample_09-F9_protest_art%2C_Free_Speech_Flag_by_John_Marcotte.svg/330px-Sample_09-F9_protest_art%2C_Free_Speech_Flag_by_John_Marcotte.svg.png" alt="Copyleft" width="50"/></a>
