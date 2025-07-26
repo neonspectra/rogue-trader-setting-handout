@@ -82,7 +82,7 @@ Remember to print with flip on long edge when printing in duplex so that the bac
 
 ## License
 
-This work is licensed under a
+This work and source code is licensed under a
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
 
 [![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
