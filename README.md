@@ -1,4 +1,4 @@
-# Warhammer 40k: Rogue Trader - Setting One-Pager Handout
+# Warhammer 40k: Rogue Trader // Setting One-Pager Handout
 
 This handout is intended for use as an introductory primer for people getting into the Rogue Trader TTRPG by Fantasy Flight Games. This document is an unlicensed fan work and is not associated with or endorsed by Games Workshop.
 
