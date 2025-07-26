@@ -1,8 +1,9 @@
 # Warhammer 40k: Rogue Trader // Setting One-Pager Handout
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-This handout is intended for use as an introductory primer for people getting into [Rogue Trader, the tabletop roleplaying game by Fantasy Flight Games](https://wh40k.lexicanum.com/wiki/Rogue_Trader_Core_Rulebook). This handout is an unlicensed fan work and is not associated with or endorsed by Games Workshop.
+This handout is intended for use as an introductory primer for people getting into [Rogue Trader, the tabletop roleplaying game by Fantasy Flight Games](https://wh40k.lexicanum.com/wiki/Rogue_Trader_Core_Rulebook). 
 
-Handout and source code released under [Creative Commons CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en). Please feel free to use it at your table or fork this repo, compile it yourself, and make your own fluffy in-universe style documents with it. 
+This repo is an unlicensed fan work and is not associated with or endorsed by Games Workshop. Please feel free to use it at your table or fork this repo, compile it yourself, and make your own fluffy in-universe style documents with it. 
 
 <p align="center">
   <img src="sample/thumb-pg1.png" alt="Thumbnail - Page 1" width="200"/>
@@ -78,3 +79,14 @@ pdfjam handout-a4.pdf \
 ```
 
 Remember to print with flip on long edge when printing in duplex so that the back side isn't upside down.
+
+## License
+
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
