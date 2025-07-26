@@ -31,7 +31,7 @@ None of the italics flavour quotes are attributable to me. Here is where they al
 
 ## Assets Used
 
-- Warhammer 40,000 Imperial Aquila by mack648 - [SVG](https://seeklogo.com/vector-logo/342858/imperial-aquila).
+- [Warhammer 40,000 Imperial Aquila SVG by mack648](https://seeklogo.com/vector-logo/342858/imperial-aquila).
     - I am pretty sure that the Imperial Aquila is a trademark of Games Workshop. I have made use of it with no license, endorsement, or permission for this fan creation.
 - Fonts:
     - [KJV1611](https://github.com/ctrlcctrlv/kjv1611) by Fredrick Brennan [@ctrlcctrlv](https://github.com/ctrlcctrlv) (OFL-1.1 license - License text in asset folder)
