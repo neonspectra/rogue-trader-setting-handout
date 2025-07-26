@@ -1,21 +1,19 @@
-# Warhammer 40k: Rogue Trader - Setting Handout
+# Warhammer 40k: Rogue Trader - Setting One-Pager Handout
 
-This handout is intended for use as an introductory primer for people getting into the Rogue Trader TTRPG by Fantasy Flight Games. This repo is an unlicensed fan work and is not associated with or endorsed by Games Workshop.
+This handout is intended for use as an introductory primer for people getting into the Rogue Trader TTRPG by Fantasy Flight Games. This document is an unlicensed fan work and is not associated with or endorsed by Games Workshop.
 
-Handout and source code released under [Creative Commons CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en). Please feel free to use it with your table or compile it yourself and make your own fluffy in-universe style documents with it. 
+Handout and source code released under [Creative Commons CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en). Please feel free to use it at your table or fork this repo, compile it yourself, and make your own fluffy in-universe style documents with it. 
 
-![Thumbnail - Page 1](sample/thumb-pg1.png) ![Thumbnail - Page 2](sample/thumb-pg2.png)
+<p align="center">
+  <img src="sample/thumb-pg1.png" alt="Thumbnail - Page 1" width="200"/>
+  <img src="sample/thumb-pg2.png" alt="Thumbnail - Page 2" width="200"/>
+</p>
 
-I created this handout because I wanted to run a Rogue Trader game for a new group with little to no familiarity with the Warhammer 40k universe. Given how vast and complicated this setting is, my goal with this handout is to convey the "absolute bare minimum shit you need to know" in a highly economical single-page two-sided handout.
+I created this handout because I wanted to run a Rogue Trader game for a new group with little to no familiarity with the Warhammer 40k universe. 
 
-Nobody likes being given a boring wall of text to read, so I've spruced up the layout to make it feel more immersive and easier on the eyes so that my players are more likely to actually read it.
+Given how vast, complicated, and hard to get into this setting is, my goal with this handout is to convey the "absolute bare minimum shit you need to know" in an economical single-page handout. Be aware that I've generalised, glossed over, and dumbed a lot of details to ensure that all the text fits onto two sides of a single sheet of paper. Consider this a conversation starter for your players! :)
 
-## Assets Used
-
-- Warhammer 40,000 Imperial Aquila by mack648 - [SVG](https://seeklogo.com/vector-logo/342858/imperial-aquila). I am pretty sure that the Imperial Aquila is a trademark of Games Workshop, and I have made use of it with no license, endorsement, or permission for this fan creation.
-- Fonts:
-    - [KJV1611](https://github.com/ctrlcctrlv/kjv1611) by Fredrick Brennan [@ctrlcctrlv](https://github.com/ctrlcctrlv) (OFL-1.1 license - License text in asset folder)
-    - [TT2020](https://github.com/ctrlcctrlv/TT2020) by Fredrick Brennan [@ctrlcctrlv](https://github.com/ctrlcctrlv) (OFL-1.1 license - License text in asset folder)
+Nobody likes being given a boring wall of text to read, so I've spruced up the layout to make the handout feel more immersive and easier on the eyes so that my players are more likely to actually read it.
 
 ## Quote References
 
@@ -30,6 +28,18 @@ None of the italics flavour quotes are attributable to me. Here is where they al
 - "*Great Maker, whose Motive Force [..] godly communion.*" - R. Sanders, *Adeptus Mechanicus: Tech-Priest*. Nottingham: Black Library, 2015. ISBN 978-1782518051.
 - "*Between the stars the ancient unseen enemies of mankind wait and hunger.*" - R. Priestly, A. Chambers. *Warhammer 40,000 Codex Imperialis (2nd Edition)*. Nottingham: Games Workshop, 1993. ISBN 978-1869893835. Page 7.
 - "*I have seen darkness [...] So I step off and welcome the dark.*" - N. Kyme, *Vulkan Lives*. Nottingham: Black Library, 2013. ISBN 9781849705127.
+
+## Assets Used
+
+- Warhammer 40,000 Imperial Aquila by mack648 - [SVG](https://seeklogo.com/vector-logo/342858/imperial-aquila).
+    - I am pretty sure that the Imperial Aquila is a trademark of Games Workshop. I have made use of it with no license, endorsement, or permission for this fan creation.
+- Fonts:
+    - [KJV1611](https://github.com/ctrlcctrlv/kjv1611) by Fredrick Brennan [@ctrlcctrlv](https://github.com/ctrlcctrlv) (OFL-1.1 license - License text in asset folder)
+    - [TT2020](https://github.com/ctrlcctrlv/TT2020) by Fredrick Brennan [@ctrlcctrlv](https://github.com/ctrlcctrlv) (OFL-1.1 license - License text in asset folder)
+
+## GitHub Actions Workflow
+
+This document is compiled with GitHub Actions in XeLaTeX using [xu-cheng/latex-action](https://github.com/xu-cheng/latex-action). You can build the document yourself if you fork this repo and manually trigger the **Compile and Upload** action from the Actions tab.
 
 ## Full-Bleed Printing
 
