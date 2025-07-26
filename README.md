@@ -1,5 +1,5 @@
 # Rogue Trader // Setting One-Pager Handout // Warhammer 40k
-[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa] | [Download PDF Here](https://github.com/neonspectra/rogue-trader-setting-handout/releases)
 
 This handout an introductory primer for the setting of [Rogue Trader](https://wh40k.lexicanum.com/wiki/Rogue_Trader_Core_Rulebook), a tabletop roleplaying game by Fantasy Flight Games set in the [Warhammer 40,000](https://en.wikipedia.org/wiki/Warhammer_40,000) sci-fi universe. Please feel free to print off and use this with new players at your table. Or, you can fork this repo, compile it yourself, and make your own fluffy in-universe-style documents to do as you please with.
 
