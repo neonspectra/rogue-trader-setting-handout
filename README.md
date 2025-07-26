@@ -86,6 +86,7 @@ This work and source code is licensed under a
 [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
 
 [![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+<a href="https://en.wikipedia.org/wiki/Copyleft"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Sample_09-F9_protest_art%2C_Free_Speech_Flag_by_John_Marcotte.svg/330px-Sample_09-F9_protest_art%2C_Free_Speech_Flag_by_John_Marcotte.svg.png" alt="Copyleft" width="50"/></a>
 
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
