@@ -18,7 +18,7 @@ Nobody likes being given a boring wall of text, so I've spruced up the layout wi
 
 ## Quote References
 
-None of the italics flavour quotes are attributable to me. Here is where they all are from if you want to check out the source material:
+Warhammer lore is so rich and quotable. None of the italics flavour quotes on the handout are attributable to me. Here is where they all are from in case you want to check out the source material:
 
 - "*It is the 41st Millennium [...] thirsting gods*" - R. Priestley, *Warhammer 40,000 Rogue Trader*. Nottingham: Games Workshop, 1987. ISBN 1-869893-23-9. Page 1.
 - "*We must, each of us, occupy our preordained particular [...] You belong on the foot.*" - *Snowpiercer*, directed by Bong Joon-ho, IMDB tt1706620, 2013.
