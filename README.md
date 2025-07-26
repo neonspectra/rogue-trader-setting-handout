@@ -1,9 +1,9 @@
-# Warhammer 40k: Rogue Trader // Setting One-Pager Handout
+# Rogue Trader // Setting One-Pager Handout // Warhammer 40k
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-This handout is intended for use as an introductory primer for people getting into [Rogue Trader, the tabletop roleplaying game by Fantasy Flight Games](https://wh40k.lexicanum.com/wiki/Rogue_Trader_Core_Rulebook). 
+This handout an introductory primer for the setting of [Rogue Trader](https://wh40k.lexicanum.com/wiki/Rogue_Trader_Core_Rulebook), a tabletop roleplaying game by Fantasy Flight Games set in the [Warhammer 40,000](https://en.wikipedia.org/wiki/Warhammer_40,000) sci-fi universe. Please feel free to print off and use this with new players at your table. Or, you can fork this repo, compile it yourself, and make your own fluffy in-universe-style documents to do as you please with.
 
-This repo is an unlicensed fan work and is not associated with or endorsed by Games Workshop. Please feel free to use it at your table or fork this repo, compile it yourself, and make your own fluffy in-universe style documents with it. 
+**Disclaimer:** Warhammer 40,000 is a trademark and product of [Games Workshop](https://www.warhammer.com/en-CA/home). This repo is an unlicensed fan work and is not associated with or endorsed by Games Workshop. Please don't sue me.
 
 <p align="center">
   <img src="sample/thumb-pg1.png" alt="Thumbnail - Page 1" width="200"/>
@@ -12,9 +12,9 @@ This repo is an unlicensed fan work and is not associated with or endorsed by Ga
 
 I created this handout because I wanted to run a Rogue Trader game for a new group with little to no familiarity to the Warhammer 40k universe. 
 
-Given how vast, complicated, and hard to get into this setting is, my goal with this handout is to convey the absolute bare minimum "shit you need to know" in an economical single-page handout. Be aware that I've generalised, glossed over, and dumbed down a lot of details to ensure that all the text fits onto two sides of a single sheet of paper. Consider this a conversation starter for your players! :)
+Given how vast, complicated, and hard to get into this setting is, my goal was convey the absolute bare minimum "shit you need to know" in an economical single-page handout for new players. Be aware that I've generalised, glossed over, and dumbed down a lot of details to ensure that all the text fits onto two sides of a single sheet of paper. Consider this a conversation starter for your players! :)
 
-Nobody likes being given a boring wall of text to read, so I've spruced up the layout to make the handout feel more immersive and easier on the eyes so that my players are more likely to actually read it.
+Nobody likes being given a boring wall of text to read, so I've spruced up the layout with eye candy to make the handout feel more immersive so that our players are more likely to actually read it.
 
 ## Quote References
 
